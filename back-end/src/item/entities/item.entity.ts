@@ -6,7 +6,7 @@ export class Item extends BaseEntity {
     @PrimaryGeneratedColumn('uuid')
     id: string;
 
-    @UpdateDateColumn({ name: 'updated at', type: 'timestamptz', default: () => 'CURRENTE_TIMESTAMP'})
+    @UpdateDateColumn({ name: 'updated at', type: 'timestamptz', default: () => 'CURRENT_TIMESTAMP'})
     updatedAt: Date;
 
     @Column({ name: 'name', type: 'varchar', length: 50 })
